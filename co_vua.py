@@ -187,7 +187,7 @@ while running:
 
     if not player_turn:
         pygame.time.wait(500)
-        _, move = minimax(board, depth=2, alpha=-math.inf, beta=math.inf, maximizing=False)
+        _, move = minimax(board, depth=3, alpha=-math.inf, beta=math.inf, maximizing=False)
         if move:
           if board.is_capture(move):
              capture_sound.play()
